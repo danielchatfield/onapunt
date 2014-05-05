@@ -1,0 +1,66 @@
+.splash {
+  position: relative;
+  max-height: 900px;
+  height: 100%;
+  background-color: @primary-color;
+}
+
+.splash-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: fade(@primary-color, 45%);
+    content: "";
+  }
+}
+
+.top-bar {
+  .clearfix;
+}
+
+.top-bar-left {
+  float: left;
+  padding: 1em;
+}
+
+.list-view {
+  .tabs {
+    border-top: 1px solid #dddddd;
+
+    ul {
+      list-style: none;
+      margin-top: -1px;
+      padding: 0 0.5em;
+
+      li {
+        display: inline-block;
+        margin: 0 0.3em;
+        padding: 0.8em 1em;
+        color: #666666;
+        border-top: 1px solid transparent;
+        font-weight: 600;
+        font-size: 0.8em;
+
+        &:hover, &.active {
+          color: black;
+          border-top-color: black;
+        }
+      }
+    }
+  }
+}
+
+.article-list-view {
+  .list-view;
+}

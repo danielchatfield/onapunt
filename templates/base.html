@@ -1,0 +1,22 @@
+{#-
+   base.html
+
+   Copyright (c) 2014 Daniel Chatfield
+-#}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}On a Punt - Film reviews from Cambridge{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}" />
+    {% block css %}
+    <link rel="stylesheet" href="/public/css/bundle.css"></link>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    {% endblock %}
+  </head>
+  <body ontouchstart="">
+    {% block body %}
+    {% endblock %}
+    {% block js %}
+    {% endblock %}
+  </body>
+</html>

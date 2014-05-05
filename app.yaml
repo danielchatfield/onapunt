@@ -1,0 +1,39 @@
+application: onapunt
+version: development
+
+runtime: python27
+threadsafe: true
+api_version: 1
+
+default_expiration: 30d
+
+handlers:
+- url: /public
+  static_dir: public
+- url: .*
+  script: onapunt.app
+  secure: optional
+
+inbound_services:
+- warmup
+
+skip_files:
+- ^(.*/)?app\.yaml
+- ^(.*/)?app\.yml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+- ^(.*/)?tests$
+- ^(.*/)?test$
+- ^test/(.*/)?
+- ^COPYING.LESSER
+- ^README\..*
+- \.gitignore
+- ^\.git/.*
+- \.*\.lint$
+- ^fabfile\.py
+- ^testrunner\.py
+- ^grunt\.js
+- ^node_modules/(.*/)?

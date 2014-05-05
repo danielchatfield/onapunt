@@ -1,0 +1,124 @@
+/*
+ * bundle.css
+ * ~~~~~~~~~~
+ *
+ * Copyright (c) 2014 Daniel Chatfield
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.layout-container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 1em normal 'Open Sans', sans-serif;
+}
+a,
+.link {
+  cursor: pointer;
+}
+.splash {
+  position: relative;
+  max-height: 900px;
+  height: 100%;
+  background-color: #f23e2f;
+}
+.splash-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+.splash-image::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(242, 62, 47, 0.45);
+  content: "";
+}
+.top-bar:before,
+.top-bar:after {
+  content: " ";
+  display: table;
+}
+.top-bar:after {
+  clear: both;
+}
+.top-bar-left {
+  float: left;
+  padding: 1em;
+}
+.list-view .tabs {
+  border-top: 1px solid #dddddd;
+}
+.list-view .tabs ul {
+  list-style: none;
+  margin-top: -1px;
+  padding: 0 0.5em;
+}
+.list-view .tabs ul li {
+  display: inline-block;
+  margin: 0 0.3em;
+  padding: 0.8em 1em;
+  color: #666666;
+  border-top: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.list-view .tabs ul li:hover,
+.list-view .tabs ul li.active {
+  color: black;
+  border-top-color: black;
+}
+.article-list-view .tabs {
+  border-top: 1px solid #dddddd;
+}
+.article-list-view .tabs ul {
+  list-style: none;
+  margin-top: -1px;
+  padding: 0 0.5em;
+}
+.article-list-view .tabs ul li {
+  display: inline-block;
+  margin: 0 0.3em;
+  padding: 0.8em 1em;
+  color: #666666;
+  border-top: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.article-list-view .tabs ul li:hover,
+.article-list-view .tabs ul li.active {
+  color: black;
+  border-top-color: black;
+}
