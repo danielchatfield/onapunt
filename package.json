@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielchatfield/project-one.git"
+    "url": "https://github.com/danielchatfield/onapunt.git"
   },
   "author": "",
   "license": "Artistic 2.0",
   "bugs": {
-    "url": "https://github.com/danielchatfield/project-one/issues"
+    "url": "https://github.com/danielchatfield/onapunt/issues"
   },
-  "homepage": "https://github.com/danielchatfield/project-one",
+  "homepage": "https://github.com/danielchatfield/onapunt",
   "devDependencies": {
     "gulp": "^3.5.6",
     "gulp-watch": "^0.5.3",
