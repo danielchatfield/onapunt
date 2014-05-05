@@ -1,0 +1,69 @@
+.button {
+    text-transform: uppercase;
+    word-spacing: -0.3em;
+    font-family: courier;
+    .no-user-select;
+    .border-radius(0.2em);
+    display: inline-block;
+    line-height: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-right: 0.5em;
+    opacity: 0.9;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+    position: relative;
+    top: -0.2em;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+        outline: none;
+    }
+
+    &:active {
+        top: 0;
+    }
+
+    &:disabled,
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+}
+
+.small-button {
+    padding: 0.2em 0.5em;
+}
+
+.button-helper(@button-color, @text-color: white) {
+    @button-color-dark: darken(@button-color, 20%);
+    @button-color-darker: darken(@button-color, 25%);
+
+    background-color: @button-color;
+    .box-shadow(0 0.2em 0 @button-color-dark);
+    color: @text-color;
+
+    &:hover,
+    &:focus {
+        color: @text-color;
+        .box-shadow(0 0.2em 0 @button-color-darker);
+    }
+
+    &:active {
+        .box-shadow(none);
+    }
+}
+
+
+.block-form .regular-button,
+.regular-button {
+    .button-helper(#bcb5ad, white);
+}
+
+.block-form .primary-button,
+.primary-button {
+    .button-helper(#f23e2f, white);
+}

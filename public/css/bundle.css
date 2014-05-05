@@ -12,17 +12,127 @@
 .clearfix:after {
   clear: both;
 }
+.align-center {
+  text-align: center;
+}
+.button {
+  text-transform: uppercase;
+  word-spacing: -0.3em;
+  font-family: courier;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 0.2em;
+  -mox-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  border-radius: 0.2em;
+  display: inline-block;
+  line-height: 1em;
+  cursor: pointer;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-right: 0.5em;
+  opacity: 0.9;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top: -0.2em;
+}
+.button:hover,
+.button:focus {
+  opacity: 1;
+  outline: none;
+}
+.button:active {
+  top: 0;
+}
+.button:disabled,
+.button.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.small-button {
+  padding: 0.2em 0.5em;
+}
+.block-form .regular-button,
+.regular-button {
+  background-color: #bcb5ad;
+  -webkit-box-shadow: 0 0.2em 0 #8e8275;
+  -mox-box-shadow: 0 0.2em 0 #8e8275;
+  -ms-box-shadow: 0 0.2em 0 #8e8275;
+  -o-box-shadow: 0 0.2em 0 #8e8275;
+  box-shadow: 0 0.2em 0 #8e8275;
+  color: #ffffff;
+}
+.block-form .regular-button:hover,
+.regular-button:hover,
+.block-form .regular-button:focus,
+.regular-button:focus {
+  color: #ffffff;
+  -webkit-box-shadow: 0 0.2em 0 #817669;
+  -mox-box-shadow: 0 0.2em 0 #817669;
+  -ms-box-shadow: 0 0.2em 0 #817669;
+  -o-box-shadow: 0 0.2em 0 #817669;
+  box-shadow: 0 0.2em 0 #817669;
+}
+.block-form .regular-button:active,
+.regular-button:active {
+  -webkit-box-shadow: none;
+  -mox-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.block-form .primary-button,
+.primary-button {
+  background-color: #f23e2f;
+  -webkit-box-shadow: 0 0.2em 0 #b0180b;
+  -mox-box-shadow: 0 0.2em 0 #b0180b;
+  -ms-box-shadow: 0 0.2em 0 #b0180b;
+  -o-box-shadow: 0 0.2em 0 #b0180b;
+  box-shadow: 0 0.2em 0 #b0180b;
+  color: #ffffff;
+}
+.block-form .primary-button:hover,
+.primary-button:hover,
+.block-form .primary-button:focus,
+.primary-button:focus {
+  color: #ffffff;
+  -webkit-box-shadow: 0 0.2em 0 #981409;
+  -mox-box-shadow: 0 0.2em 0 #981409;
+  -ms-box-shadow: 0 0.2em 0 #981409;
+  -o-box-shadow: 0 0.2em 0 #981409;
+  box-shadow: 0 0.2em 0 #981409;
+}
+.block-form .primary-button:active,
+.primary-button:active {
+  -webkit-box-shadow: none;
+  -mox-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
 .layout-container {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
+@font-face {
+  font-family: "Essays 1743";
+  src: url("/fonts/essays/normal.eot?") format("eot"), url("font/essays/normal.woff") format("woff"), url("font/essays/normal.ttf") format("truetype");
+}
 html,
 body {
   height: 100%;
+  color: #2a2b24;
+  font: 1em normal 'Open Sans', sans-serif;
+  color: #3e3f3a;
 }
 html {
-  font-size: 100%;
+  font-size: 20px;
 }
 body {
   font-size: 18px;
@@ -41,6 +151,9 @@ textarea {
 a,
 .link {
   cursor: pointer;
+}
+h1 {
+  font-family: "Essays 1743", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
 }
 .splash {
   position: relative;
@@ -121,4 +234,22 @@ a,
 .article-list-view .tabs ul li.active {
   color: black;
   border-top-color: black;
+}
+.home {
+  display: table-cell;
+  vertical-align: middle;
+}
+.home h1,
+.home h2 {
+  text-align: center;
+}
+.home h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #2a2b24;
+}
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
