@@ -38,7 +38,13 @@ def create_app(package_name='onapunt', config=None, **kwargs):
     # python, css, js, etc. or to have modules where the python, css, js etc.
     # for each module is contained within a single folder. The latter is quite
     # complex to achieve (compilation headaches) and thus I have decided to
-    # structure it like this.
+    # structure it like this, with python files in `onapunt`, jinja templates
+    # in `templates` and the uncompiled assets (less, js, images etc.) in the
+    # `assets` folder (the assets are compiled using gulp and put into the
+    # `public` folder).
+    #
+    # This line changes the `template_folder` so that it is outide the python
+    # package folder.
     template_folder = os.path.join(os.path.dirname(package_path), 'templates')
 
     default_kwargs = {
