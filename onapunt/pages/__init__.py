@@ -16,3 +16,8 @@ bp = create_blueprint('pages', __name__)
 @bp.route('/')
 def home():
     return render_template('pages/home_temp.html')
+
+@bp.route('/openssl')
+def openssl():
+    import _ssl
+    return str(_ssl.OPENSSL_VERSION)

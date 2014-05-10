@@ -37,3 +37,7 @@ skip_files:
 - ^testrunner\.py
 - ^grunt\.js
 - ^node_modules/(.*/)?
+
+libraries:
+- name: ssl
+  version: latest
